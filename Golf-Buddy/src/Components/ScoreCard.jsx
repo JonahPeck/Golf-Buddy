@@ -10,16 +10,16 @@ function ScoreCard() {
             <tbody>
                 <tr>
                     <th>
-                        <h3 className="ui center aligned header">Date</h3>
+                        <h3 className="ui center aligned header"> Date </h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">Club</h3>
+                        <h3 className="ui center aligned header"> Club </h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">Course</h3>
+                        <h3 className="ui center aligned header"> Course </h3>
                     </th>
                     <th>
-                        <h3 className="ui center aligned header">Round Score</h3>
+                        <h3 className="ui center aligned header"> Round Score </h3>
                     </th>
                 </tr>
                 <ScoreCard onAddScore={handleAddNewScoreCard} />

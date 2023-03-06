@@ -5,9 +5,7 @@ import TheBasics from './TheBasics';
 import SearchGolfCourses from './SearchGolfCourses';
 
 function GolfPage() {
-    const [golfCourse, setGolfCourse] = useState([]);
-    const [newScoreCard, setNewScoreCard] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
+
 
     useEffect(() => {
         fetch("http://localhost:3001/Golf_Courses")

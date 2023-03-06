@@ -1,0 +1,31 @@
+{
+    "Golf_Courses": [
+        {
+            "id": 1,
+            "Club": "Torrey Pines",
+            "Course": "North and South Courses",
+            "Location": "San Diego, California",
+            "Date": "2021-7-22",
+            "Score": 76,
+            "Image": "https://lh3.googleusercontent.com/p/AF1QipOsJAiI6JSynk9MoAtz4AoMdPKTdKaM6vAQD074=s1360-w1360-h1020"
+        },
+        {
+            "id": 2,
+            "Club": "Augusta National",
+            "Course": "Augusta National",
+            "Location": "Augusta, Georgia",
+            "Date": "2021-8-04",
+            "Score": 82,
+            "Image": "https://golf.com/wp-content/uploads/2019/11/Augusta-National.jpg"
+        },
+        {
+            "id": 3,
+            "Club": "Pebble Beach Golf Links",
+            "Course": "Pebble Beach",
+            "Location": "Pebble Beach, California",
+            "Date": "2021-5-30",
+            "Score": 79,
+            "Image": "https://www.pebblebeach.com/content/uploads/08aPBGL20-1mm0100Hc-900x600.jpg"
+        }
+    ]
+}

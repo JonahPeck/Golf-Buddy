@@ -22,7 +22,7 @@ function ScoreCard() {
                         <h3 className="ui center aligned header"> Round Score </h3>
                     </th>
                 </tr>
-                <ScoreCard onAddScore={handleAddNewScoreCard} />
+
             </tbody>
 
         </table>

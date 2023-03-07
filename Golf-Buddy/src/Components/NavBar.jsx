@@ -10,25 +10,25 @@ function NavBar() {
                 <div>
                     <NavLink
                         className="navbar-button"
-                        to="/">Home 🏠
+                        to="/">The 19th Hole
                     </NavLink>
                 </div>
                 <div>
                     <NavLink
                         className="navbar-button"
-                        to="/GolfCourseCollection">The Links ⛳
+                        to="/GolfCourseCollection">The Links
                     </NavLink>
                 </div>
                 <div>
                     <NavLink
                         className="navbar-button"
-                        to="/TheBasics">The Basics 🏌🏼
+                        to="/TheBasics">The Basics
                     </NavLink>
                 </div>
                 <div>
                     <NavLink
                         className="navbar-button"
-                        to="/ScoreCard"> The ScoreCard 📋
+                        to="/ScoreCardForm"> The ScoreCard
                     </NavLink>
                 </div>
 

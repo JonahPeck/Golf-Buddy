@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GolfCourseCollection from './GolfCourseCollection';
-import ScoreCard from './ScoreCard';
+import ScoreCardForm from './ScoreCardForm';
 import TheBasics from './TheBasics';
 import Home from './Home';
 // import SearchGolfCourses from './SearchGolfCourses';
@@ -19,10 +19,21 @@ function App() {
     fetch("http://localhost:3001/Golf_Courses")
       .then((response) => response.json())
       .then(setGolfCourse)
+
+    fetch("http://localhost:3001/Scores")
+      .then((r) => r.json())
+      .then(setNewScoreCard)
   }, []);
 
-  const handleAddNewScoreCard = (newScore) => {
-    setNewScoreCard(...newScoreCard, newScore);
+  // useEffect(() => {
+  //   fetch("http://localhost:3001/Scores")
+  //     .then((r) => r.json())
+  //     .then(setNewScoreCard)
+  // }, []);
+
+
+  function handleAddNewScoreCard(newScore) {
+    setNewScoreCard([...newScoreCard, newScore]);
   }
 
   const coursesToDisplay = golfCourse.filter((golf) =>
@@ -30,7 +41,6 @@ function App() {
     golf.Course.toLowerCase().includes(searchTerm.toLowerCase()) ||
     golf.Location.toLowerCase().includes(searchTerm.toLowerCase())
   )
-
 
 
   return (
@@ -56,9 +66,12 @@ function App() {
         />
 
         <Route
-          path="/ScoreCard"
-          element={<ScoreCard
+          path="/ScoreCardForm"
+          element={<ScoreCardForm
             handleAddNewScoreCard={handleAddNewScoreCard}
+            newScoreCard={newScoreCard}
+            onAddScore={handleAddNewScoreCard}
+
           //delete scoreCard functionality
 
           />}
@@ -71,7 +84,7 @@ function App() {
         />
 
 
-        {/* <SearchGolfCourses searchTerm={searchTerm} onChangeSearch={setSearchTerm} /> */}
+
       </Routes>
 
     </div>

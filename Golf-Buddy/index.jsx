@@ -9,4 +9,4 @@ root.render(
     <BrowseRouter>
         <App />
     </BrowseRouter>
-)
+);

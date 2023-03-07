@@ -6,6 +6,9 @@ function NavBar() {
 
     return (
         <div>
+            <header>Golf Courses around the world
+
+            </header>
             <nav className="nav bar">
                 <div>
                     <NavLink
@@ -22,7 +25,7 @@ function NavBar() {
                 <div>
                     <NavLink
                         className="navbar-button"
-                        to="/ScoreCard"> ScoreCard 📋
+                        to="/ScoreCard"> The ScoreCard 📋
                     </NavLink>
                 </div>
 

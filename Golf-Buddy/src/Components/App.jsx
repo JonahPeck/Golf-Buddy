@@ -6,7 +6,7 @@ import TheBasics from './TheBasics';
 //commented out as the functionality has been put within the Golf course collection
 import { Routes, Route } from 'react-router-dom';
 
-// import NavBar from './NavBar';
+import NavBar from './NavBar';
 
 function App() {
   // const [page, setPage] = useState("/");

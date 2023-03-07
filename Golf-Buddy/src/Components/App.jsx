@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GolfCourseCollection from './GolfCourseCollection';
 import ScoreCard from './ScoreCard';
 import TheBasics from './TheBasics';
+import Home from './Home';
 // import SearchGolfCourses from './SearchGolfCourses';
 //commented out as the functionality has been put within the Golf course collection
 import { Routes, Route } from 'react-router-dom';
@@ -20,7 +21,7 @@ function App() {
       .then(setGolfCourse)
   }, []);
 
-  function handleAddNewScoreCard(newScore) {
+  const handleAddNewScoreCard = (newScore) => {
     setNewScoreCard(...newScoreCard, newScore);
   }
 
@@ -34,29 +35,32 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Golf Courses Around the Globe</h1>
+      {/* <h1>Golf Courses Around the US!</h1> */}
       <NavBar />
       <Routes>
 
         <Route
           path="/"
-          element={<NavBar
+          element={<Home
             golfCourse={golfCourse} />}
         />
 
         <Route
           path="/GolfCourseCollection"
           element={<GolfCourseCollection
-            golfCourse={coursesToDisplay}
-            searchTerm={searchTerm}
-            onChangeSearch={setSearchTerm}
+            coursesToDisplay={coursesToDisplay}
+            setSearchTerm={setSearchTerm}
+            onChange={setSearchTerm}
+          //OnClick to display further information on the courses.
           />}
         />
 
         <Route
           path="/ScoreCard"
           element={<ScoreCard
-            onAddScore={handleAddNewScoreCard}
+            handleAddNewScoreCard={handleAddNewScoreCard}
+          //delete scoreCard functionality
+
           />}
         />
 

@@ -7,7 +7,9 @@
             "Location": "San Diego, California",
             "Date": "2021-7-22",
             "Score": 76,
-            "Image": "https://lh3.googleusercontent.com/p/AF1QipOsJAiI6JSynk9MoAtz4AoMdPKTdKaM6vAQD074=s1360-w1360-h1020"
+            "Image": "https://lh3.googleusercontent.com/p/AF1QipOsJAiI6JSynk9MoAtz4AoMdPKTdKaM6vAQD074=s1360-w1360-h1020",
+            "Times Played": 0,
+            "Description": "Testing"
         },
         {
             "id": 2,
@@ -16,7 +18,9 @@
             "Location": "Augusta, Georgia",
             "Date": "2021-8-04",
             "Score": 82,
-            "Image": "https://golf.com/wp-content/uploads/2019/11/Augusta-National.jpg"
+            "Image": "https://golf.com/wp-content/uploads/2019/11/Augusta-National.jpg",
+            "Times Played": 0,
+            "Description": "Testing"
         },
         {
             "id": 3,
@@ -25,7 +29,9 @@
             "Location": "Pebble Beach, California",
             "Date": "2021-5-30",
             "Score": 79,
-            "Image": "https://www.pebblebeach.com/content/uploads/08aPBGL20-1mm0100Hc-900x600.jpg"
+            "Image": "https://www.pebblebeach.com/content/uploads/08aPBGL20-1mm0100Hc-900x600.jpg",
+            "Times Played": 0,
+            "Description": "Testing"
         }
     ]
 }

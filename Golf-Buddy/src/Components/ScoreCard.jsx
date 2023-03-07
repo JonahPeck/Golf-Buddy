@@ -10,7 +10,11 @@ function ScoreCard() {
             <tbody>
                 <tr>
                     <th>
-                        <h3 className="ui center aligned header"> Date </h3>
+                        <h3 className="ui center aligned header"> Date
+                            {/* <div className="club">
+                                {Course}
+                            </div> */}
+                        </h3>
                     </th>
                     <th>
                         <h3 className="ui center aligned header"> Club </h3>

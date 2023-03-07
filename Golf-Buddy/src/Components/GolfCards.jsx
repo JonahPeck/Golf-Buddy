@@ -2,6 +2,7 @@ import React from 'react';
 
 
 function GolfCards({ golfCourse }) {
+
     const { Club, Course, Location, Image } = golfCourse;
 
     return (

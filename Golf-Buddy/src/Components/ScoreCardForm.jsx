@@ -82,6 +82,10 @@ function ScoreCardForm({ onAddScore, newScoreCard, onRemoveListing }) {
 
     return (
         <div className="new-score-form">
+            <header className="card-form-title">Track Your Rounds Here!</header>
+            <div>
+                <img className="score-card-image" src="https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/fullset/2020/04/09/5e8e82eaabcbf2ecb8ec0ffd_1960-masters-leaderboard.jpg.rend.hgtvcom.1850.1480.suffix/1587135323565.jpeg" />
+            </div>
             <form onSubmit={(event) => handleSubmit(event)} className="actual-form" autoComplete="off">
                 <div className="inline fields">
                     <input type="date" name="Date" placeholder="Date" value={formData.Date} onChange={handleChange} />

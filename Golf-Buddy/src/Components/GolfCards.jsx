@@ -5,6 +5,8 @@ function GolfCards({ golfCourse }) {
 
     const { Club, Course, Location, Image } = golfCourse;
 
+
+
     return (
         <div className="golf-course-card">
             <div className="image-course">
@@ -19,6 +21,7 @@ function GolfCards({ golfCourse }) {
             <div className="location">
                 {Location}
             </div>
+
         </div>
     )
 }

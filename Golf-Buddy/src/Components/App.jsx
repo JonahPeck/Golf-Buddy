@@ -3,14 +3,11 @@ import GolfCourseCollection from './GolfCourseCollection';
 import ScoreCardForm from './ScoreCardForm';
 import TheBasics from './TheBasics';
 import Home from './Home';
-// import SearchGolfCourses from './SearchGolfCourses';
-//commented out as the functionality has been put within the Golf course collection
 import { Routes, Route } from 'react-router-dom';
-
 import NavBar from './NavBar';
 
 function App() {
-  // const [page, setPage] = useState("/");
+
   const [golfCourse, setGolfCourse] = useState([]);
   const [newScoreCard, setNewScoreCard] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,11 +22,6 @@ function App() {
       .then(setNewScoreCard)
   }, []);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:3001/Scores")
-  //     .then((r) => r.json())
-  //     .then(setNewScoreCard)
-  // }, []);
 
 
   function handleAddNewScoreCard(newScore) {
@@ -41,6 +33,12 @@ function App() {
     golf.Course.toLowerCase().includes(searchTerm.toLowerCase()) ||
     golf.Location.toLowerCase().includes(searchTerm.toLowerCase())
   )
+
+  function handleRemoveScore(id) {
+    const newCourseInfo = newScoreCard.filter((newScoreCard) =>
+      newScoreCard.id !== id);
+    setNewScoreCard(newCourseInfo)
+  }
 
 
   return (
@@ -71,8 +69,9 @@ function App() {
             handleAddNewScoreCard={handleAddNewScoreCard}
             newScoreCard={newScoreCard}
             onAddScore={handleAddNewScoreCard}
+            handleRemoveScore={handleRemoveScore}
+            onRemoveListing={handleRemoveScore}
 
-          //delete scoreCard functionality
 
           />}
         />

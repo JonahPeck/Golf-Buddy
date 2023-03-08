@@ -9,25 +9,25 @@ function NavBar() {
             <nav className="nav bar">
                 <div>
                     <NavLink
-                        className="navbar-button"
+                        className="navbar-button-19"
                         to="/">The 19th Hole
                     </NavLink>
                 </div>
                 <div>
                     <NavLink
-                        className="navbar-button"
+                        className="navbar-button-links"
                         to="/GolfCourseCollection">The Links
                     </NavLink>
                 </div>
                 <div>
                     <NavLink
-                        className="navbar-button"
+                        className="navbar-button-basics"
                         to="/TheBasics">The Basics
                     </NavLink>
                 </div>
                 <div>
                     <NavLink
-                        className="navbar-button"
+                        className="navbar-button-scorecard"
                         to="/ScoreCardForm"> The ScoreCard
                     </NavLink>
                 </div>

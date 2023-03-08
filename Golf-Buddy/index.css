@@ -2,6 +2,39 @@
     text-align: center;
 }
 
+.home-page-background {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.Title-Home-Page {
+    text-align: center;
+    font-size: 120px;
+
+}
+
+.navbar-button-19 {
+    text-align: center;
+}
+
+
+.image-course {
+    display: grid;
+    grid-gap: 20px;
+    display: inline-grid;
+    border-radius: 8px;
+    width: 20rem;
+    height: 15rem;
+    box-shadow: 3px 4px #e04b52;
+
+}
+
+.input-field {
+    width: 25% !important;
+    margin-right: 0.25em !important;
+    margin-left: 0.25em !important;
+}
+
 /* .home-page-background {} full size with links placed within the top  */
 
 

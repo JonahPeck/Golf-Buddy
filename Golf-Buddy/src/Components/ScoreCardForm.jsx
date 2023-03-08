@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 
 
-function ScoreCardForm({ onAddScore, newScoreCard }) {
+function ScoreCardForm({ onAddScore, newScoreCard, onRemoveListing }) {
     const [id, setId] = useState(1)
 
     const { Date, Club, Course, Score } = newScoreCard
 
     const newScoreCardAdd = newScoreCard.map((score) => {
+
+        // onRemoveListing = { onRemoveListing }
         return (
-            <div>
+            <div className="input-field">
                 <div className="date">
                     {score.Date}
                 </div>
@@ -21,13 +23,14 @@ function ScoreCardForm({ onAddScore, newScoreCard }) {
                 <div className="score">
                     {score.Score}
                 </div>
+                <button onClick={() => handleDeleteClick(score.id)} className="delete-button">❎</button>
 
             </div>
         )
 
     }
     )
-    console.log(newScoreCardAdd)
+
 
 
     const [formData, setFormData] = useState({
@@ -35,6 +38,7 @@ function ScoreCardForm({ onAddScore, newScoreCard }) {
         Club: "",
         Course: "",
         Score: "",
+        id: 0,
     });
 
     function handleChange(event) {
@@ -52,9 +56,8 @@ function ScoreCardForm({ onAddScore, newScoreCard }) {
             Club: formData.Club,
             Course: formData.Course,
             Score: parseFloat(formData.Score),
-            id
+            id: formData.id
         }
-
 
         fetch("http://localhost:3001/Scores", {
             method: "POST",
@@ -68,10 +71,18 @@ function ScoreCardForm({ onAddScore, newScoreCard }) {
     }
 
 
+    function handleDeleteClick(score) {
+        fetch(`http://localhost:3001/Scores/${score}`, {
+            method: 'DELETE',
+        })
+        onRemoveListing(score)
+    }
+
+
 
     return (
         <div className="new-score-form">
-            <form onSubmit={(event) => handleSubmit(event)} className="actual-form">
+            <form onSubmit={(event) => handleSubmit(event)} className="actual-form" autoComplete="off">
                 <div className="inline fields">
                     <input type="date" name="Date" placeholder="Date" value={formData.Date} onChange={handleChange} />
                     <input type="text" name="Club" placeholder="Club" value={formData.Club} onChange={handleChange} />
@@ -81,6 +92,8 @@ function ScoreCardForm({ onAddScore, newScoreCard }) {
                 <button className="submit-button" type="submit">Add A New Round!</button>
             </form>
             {newScoreCardAdd}
+            <div>
+            </div>
         </div>
     );
 }

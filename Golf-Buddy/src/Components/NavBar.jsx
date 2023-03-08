@@ -5,8 +5,7 @@ function NavBar() {
 
     return (
         <div>
-
-            <nav className="nav bar">
+            <nav className="nav-bar">
                 <div>
                     <NavLink
                         className="navbar-button-19"

@@ -13,10 +13,10 @@ function GolfCourseCollection({ coursesToDisplay, setSearchTerm }) {
 
     return (
         <div>
-            <label>Search for Golf Courses by Course, Club, or Location!</label>
+            <label className="search-title">Search for Golf Courses by Course, Club, or Location!</label>
             <br />
             <input className="prompt" onChange={handleChange} type="text" placeholder="Find a Course..."></input>
-            <div>
+            <div className="card-container">
                 {courses}
             </div>
         </div>

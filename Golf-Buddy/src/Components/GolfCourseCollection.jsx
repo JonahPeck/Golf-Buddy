@@ -2,9 +2,9 @@ import GolfCards from './GolfCards';
 
 
 
-function GolfCourseCollection({ coursesToDisplay, setSearchTerm }) {
+function GolfCourseCollection({ coursesToDisplay, setSearchTerm, handleRoundsPlayed, handlePlayedDecrement }) {
     const courses = coursesToDisplay.map((golf) => (
-        <GolfCards key={golf.id} golfCourse={golf} />
+        <GolfCards key={golf.id} golfCourse={golf} handleRoundsPlayed={handleRoundsPlayed} handlePlayedDecrement={handlePlayedDecrement} />
 
     ));
     const handleChange = (e) => {

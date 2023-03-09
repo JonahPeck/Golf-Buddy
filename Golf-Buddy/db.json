@@ -601,13 +601,6 @@
       "Course": "Oakmont Course",
       "Score": 85,
       "id": 4
-    },
-    {
-      "Date": "3/12/22",
-      "Club": "Los Angeles CC",
-      "Course": "North",
-      "Score": 80,
-      "id": 5
     }
   ]
 }

@@ -7,7 +7,89 @@
 
 }
 
-.img {}
+.The-Basics-Image {
+    float: right;
+    margin: 0 0 20px 20px;
+    width: 300px;
+    height: auto;
+    top: 0;
+}
+
+.The-goat {
+    float: left;
+    margin: 45px;
+    width: 300px;
+    height: auto;
+    top: 0;
+    border-radius: 10px;
+    border: 5px solid #057c09;
+}
+
+.The-course {
+    float: right;
+    margin: 45px;
+    width: 500px;
+    height: auto;
+    top: 0;
+    border: 5px solid #057c09;
+}
+
+.The-bag {
+    float: left;
+    margin: 45px;
+    width: 400px;
+    height: auto;
+    top: 0;
+    border: 5px solid #057c09;
+}
+
+.The-life {
+    float: right;
+    margin: 45px;
+    width: 400px;
+    height: auto;
+    top: 0;
+    border-radius: 10px;
+    border: 5px solid #057c09;
+}
+
+
+
+.tiger-quote {
+    color: black;
+    font-family: 'Newsreader', serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.the-basics-title {
+    color: #057c09;
+    font-family: 'Shrikhand', cursive;
+    font-size: 135px;
+    text-align: center;
+}
+
+.section-title {
+    color: #057c09;
+    font-family: 'Shrikhand', cursive;
+    font-size: 36px;
+    text-align: left;
+
+}
+
+.section-body {
+    color: #000000;
+    font-family: 'Newsreader', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section-blurb {
+    color: #000000;
+    font-family: 'Newsreader', serif;
+    font-size: 32px;
+    font-weight: bold;
+}
 
 .image-left-3,
 .image-left-2,

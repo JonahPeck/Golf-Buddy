@@ -20,14 +20,14 @@ function NavBar() {
                 </div>
                 <div>
                     <NavLink
-                        className="navbar-button-basics"
-                        to="/TheBasics">The Basics
+                        className="navbar-button-scorecard"
+                        to="/ScoreCardForm"> The ScoreCard
                     </NavLink>
                 </div>
                 <div>
                     <NavLink
-                        className="navbar-button-scorecard"
-                        to="/ScoreCardForm"> The ScoreCard
+                        className="navbar-button-basics"
+                        to="/TheBasics">The Basics
                     </NavLink>
                 </div>
 

@@ -50,8 +50,10 @@ function GolfCards({ golfCourse }) {
                 <div className="course">{Course}</div>
                 <div className="location">{Location}</div>
                 <p>{roundsPlayed} Rounds Played</p>
-                <button onClick={handlePlayedClick} className="rounds-played-button-increment">+</button>
-                <button onClick={handlePlayedClickDecrement} className="rounds-played-button-decrement">-</button>
+                <div className="rounds-played-container">
+                    <button onClick={handlePlayedClick} className="rounds-played-button-increment">+</button>
+                    <button onClick={handlePlayedClickDecrement} className="rounds-played-button-decrement">-</button>
+                </div>
             </div>
         </div>
 

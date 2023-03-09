@@ -573,5 +573,41 @@
       "Description": "Testing"
     }
   ],
-  "Scores": []
+  "Scores": [
+    {
+      "Date": "1/17/23",
+      "Club": "Pebble Beach",
+      "Course": "Main Course",
+      "Score": 76,
+      "id": 1
+    },
+    {
+      "Date": "1/18/23",
+      "Club": "Augusta National",
+      "Course": "Championship Course",
+      "Score": 82,
+      "id": 2
+    },
+    {
+      "Date": "4/17/22",
+      "Club": "Torrey Pines",
+      "Course": "Main Course",
+      "Score": 79,
+      "id": 3
+    },
+    {
+      "Date": "2/15/23",
+      "Club": "Oakmont ",
+      "Course": "Oakmont Course",
+      "Score": 85,
+      "id": 4
+    },
+    {
+      "Date": "3/12/22",
+      "Club": "Los Angeles CC",
+      "Course": "North",
+      "Score": 80,
+      "id": 5
+    }
+  ]
 }

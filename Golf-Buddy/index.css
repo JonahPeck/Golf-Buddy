@@ -1,4 +1,4 @@
-.score-card-image,
+/* .score-card-image, */
 .home-page-background {
     min-height: 100%;
     min-width: 100%;
@@ -6,6 +6,60 @@
     top: 0;
 
 }
+
+.img {}
+
+.image-left-3,
+.image-left-2,
+.image-left-1 {
+    display: inline-block;
+    min-height: 450px;
+    min-width: 300px;
+    /* background-size: cover; */
+    top: 1000px;
+
+}
+
+.image-left-5,
+.image-left-4 {
+    display: inline-block;
+    min-height: 450px;
+    min-width: 300px;
+    /* background-size: cover; */
+    top: 1000px;
+
+}
+
+.image-container-1 {
+    position: fixed;
+    top: 100px;
+    right: 0;
+}
+
+.image-container-1 img {
+    display: block;
+    max-height: 500px;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.image-container-2 {
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
+
+.image-container-2 img {
+    display: block;
+    max-height: 500px;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
 
 .card-container {
     display: flex;
@@ -19,17 +73,13 @@
 
 }
 
-.card-wrapper {
-    /* width: calc(20% - 20px);
-    margin: 0 10px 20px; */
-}
 
 .input-field {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    /* border: 5px solid #057c09; */
+    border-radius: 20px;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 16px;
@@ -40,23 +90,32 @@
 .input-field .club,
 .input-field .course,
 .input-field .score {
-    margin-right: 10px;
-    position: fixed;
+    margin-left: 50px;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 50px;
+    justify-content: space-between;
+    min-width: 325px;
 }
 
 .input-field .delete-button {
     background-color: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 35px;
     color: #aaa;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    margin-left: 25px;
+
 }
 
 .input-field .delete-button:hover {
     color: #f00;
+
 }
 
+.input {
+    align-items: center;
+}
 
 .card {
     display: flex;
@@ -97,24 +156,25 @@
     padding-top: 0px;
     top: 50%;
     left: 50%;
+    margin-top: 5px;
 
 }
 
 .card .club {
     margin: 10px 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
 }
 
 .card .course {
     margin: 5px 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .card .location {
     margin-bottom: 10px;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     color: #666;
 }
 
@@ -184,6 +244,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 200px;
+    margin-left: 350px;
 }
 
 .actual-form {
@@ -195,10 +257,10 @@
 
 .inline.fields {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
-    width: 100%;
-    max-width: 500px;
+    width: 50%;
+    max-width: 250px;
 }
 
 .inline.fields input {
@@ -211,6 +273,7 @@
     font-size: 35px;
     color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: left;
 }
 
 .inline.fields input:focus {
@@ -218,16 +281,67 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.rounds-played-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.rounds-played-label {
+    margin-bottom: 10px;
+}
+
+.rounds-played-input {
+    display: flex;
+    align-items: center;
+}
+
+.rounds-played-button-decrement,
+.rounds-played-button-increment {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.rounds-played-button-decrement {
+    background-color: #057c09;
+    color: #fff;
+}
+
+.rounds-played-button-increment {
+    background-color: #057c09;
+    color: #fff;
+}
+
+.rounds-played-button-decrement:hover,
+.rounds-played-button-increment:hover {
+    opacity: 0.8;
+}
+
+.rounds-played-button-decrement:active,
+.rounds-played-button-increment:active {
+    transform: scale(0.95);
+}
+
 .submit-button {
     margin: 20px;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #4caf50;
-    font-size: 16px;
+    font-size: 24px;
     color: #fff;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    align-content: left;
 }
 
 .submit-button:hover {
@@ -254,7 +368,7 @@
 
 .card-form-title {
     text-align: center;
-    font-size: 140px;
+    font-size: 125px;
     font-family: 'Shrikhand', cursive;
     color: #057c09;
     margin-bottom: 20px;
@@ -274,8 +388,12 @@
 .input-field {
     width: 25% !important;
     margin-right: 0.25em !important;
-    margin-left: 0.25em !important;
+    margin-left: 0.15em !important;
 }
+
+.input {}
+
+
 
 /* .home-page-background {} full size with links placed within the top  */
 

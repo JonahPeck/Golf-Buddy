@@ -4,7 +4,7 @@ function TheBasics() {
     return (
         <div>
             {/* <img className="The-Basics-Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzjlSxZ5KfL92UjFrkQkFuGR-fQIvkbaLIA&usqp=CAU" /> */}
-            <h1 className="the-basics-title">Everything You Need to Know to Hit the Links</h1>
+            <h1 className="the-basics-title">Everything You Need to Know to Hit the Links!</h1>
             <img className="The-goat" src="https://media.gq.com/photos/5cb4d72245c2e92e668af81a/1:1/w_3107,h_3107,c_limit/TWoods1.jpg" />
             <p className="tiger-quote">"I am really good at golf." - probably Tiger Woods</p>
             <h3 className="section-title">An Overview</h3>
